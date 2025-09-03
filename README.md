@@ -1,8 +1,8 @@
-📊 Social Media Sentiment Analyzer
+📊 #Social Media Sentiment Analyzer
 
 This project is a data analysis toolkit for studying social media posts. It helps you explore how sentiments (positive, negative, neutral) influence engagement metrics such as likes and retweets, and it also highlights trending hashtags across different platforms.
 
-📖 Overview
+📖 #Overview
 
 Perform sentiment analysis on social media text data.
 
