@@ -1,8 +1,8 @@
-📊 #Social Media Sentiment Analyzer
+📊 **Social Media Sentiment Analyzer**
 
 This project is a data analysis toolkit for studying social media posts. It helps you explore how sentiments (positive, negative, neutral) influence engagement metrics such as likes and retweets, and it also highlights trending hashtags across different platforms.
 
-📖 #Overview
+📖 **Overview**
 
 Perform sentiment analysis on social media text data.
 
@@ -41,15 +41,15 @@ pip install -r requirements.txt
 1. Python Script
 from analyzer import SentimentAnalyzer
 
-# Load dataset
+**Load Data-set**
 analyzer = SentimentAnalyzer("sentimentdataset.csv")
 
-# Plot charts
+**Plot Charts**
 analyzer.plot_sentiment_distribution()
 analyzer.compare_engagement_by_platform(metric="likes")
 analyzer.analyze_sentiment_impact_on_engagement()
 
-# Extract top hashtags
+**Extract Top Hashtags**
 print(analyzer.find_top_hashtags(n=10))
 
 2. Notebook
