@@ -1,90 +1,79 @@
 📊 Social Media Sentiment Analyzer
 
-This project analyzes social media posts to study sentiment trends, engagement patterns, and hashtag usage across platforms. It combines Python scripts, Jupyter Notebook exploration, and data visualization to uncover insights from raw data.
+This project is a data analysis toolkit for studying social media posts. It helps you explore how sentiments (positive, negative, neutral) influence engagement metrics such as likes and retweets, and it also highlights trending hashtags across different platforms.
 
-🚀 Features
+📖 Overview
 
-Sentiment Analysis → Understand distribution of positive, neutral, and negative posts.
+Perform sentiment analysis on social media text data.
 
-Engagement Study → Compare likes and retweets across platforms.
+Visualize sentiment distribution with plots.
 
-Hashtag Trends → Identify top hashtags used in different sentiment categories.
+Compare engagement across platforms.
 
-Visual Insights → Generate clear plots with Matplotlib & Seaborn.
+Extract top hashtags driving conversations.
 
-📂 Project Structure
-.
-├── analyzer.py          # Python module with SentimentAnalyzer class
-├── analyser.ipynb       # Jupyter Notebook for step-by-step analysis
-├── sentimentdataset.csv # Sample dataset
-├── requirements.txt     # Required dependencies
-├── .gitignore           # Ignore temp files & environments
-└── README.md            # Project documentation
+Work interactively through a Jupyter Notebook or use the Python module directly.
 
-🔧 Installation
+📂 Files in this Repository
+File/Folder	Description
+analyzer.py	Main Python script with SentimentAnalyzer class.
+analyser.ipynb	Notebook for step-by-step interactive analysis.
+sentimentdataset.csv	Sample dataset containing posts and engagement details.
+requirements.txt	Dependencies list (pandas, matplotlib, seaborn).
+.gitignore	Ignore unnecessary files when committing.
+README.md	Documentation (this file).
+⚙️ Installation
 
-Clone this repository and install dependencies:
+Clone the repository:
 
 git clone https://github.com/<your-username>/Sentiment-Analyzer-.git
 cd Sentiment-Analyzer-
+
+
+Install required packages:
+
 pip install -r requirements.txt
 
 
-(Optional) Use a virtual environment:
+(Optional: set up a virtual environment for clean installs.)
 
-python -m venv .venv
-.venv\Scripts\activate    # On Windows
-source .venv/bin/activate # On macOS/Linux
-
-📊 Usage
-Using the Python module:
+🚀 How to Use
+1. Python Script
 from analyzer import SentimentAnalyzer
 
-# Load data
+# Load dataset
 analyzer = SentimentAnalyzer("sentimentdataset.csv")
 
-# Plot sentiment distribution
+# Plot charts
 analyzer.plot_sentiment_distribution()
-
-# Compare engagement (likes/retweets) across platforms
 analyzer.compare_engagement_by_platform(metric="likes")
-
-# Analyze sentiment impact on engagement
 analyzer.analyze_sentiment_impact_on_engagement()
 
-# Find trending hashtags
+# Extract top hashtags
 print(analyzer.find_top_hashtags(n=10))
 
-Using the Jupyter Notebook:
+2. Notebook
 
-Open analyser.ipynb in Jupyter Lab or VSCode to walk through the analysis step by step.
+Open analyser.ipynb in Jupyter Lab/Notebook or VS Code and follow the cells for guided analysis.
 
-📊 Example Insights
+🛠 Requirements
 
-Which platform has the highest positive sentiment rate?
+Python 3.6+
 
-Do negative posts get more or fewer likes/retweets?
+pandas
 
-Which hashtags dominate each sentiment category?
+matplotlib
 
-🛠 Tech Stack
+seaborn
 
-Python (pandas, matplotlib, seaborn)
+(Automatically installed via requirements.txt.)
 
-Jupyter Notebook for interactive exploration
+📊 Example Questions Answered
 
-CSV Dataset for sentiment and engagement analysis
+What proportion of posts are positive, negative, or neutral?
 
-⚠️ Notes
+Which platform drives the most engagement for positive posts?
 
-The provided dataset is small for demo purposes. For larger datasets (>100 MB), consider using Git LFS.
+Do negative sentiments reduce or increase likes/retweets?
 
-Ensure your dataset has these columns:
-
-Text, Sentiment, Platform, Timestamp, Hashtags, Retweets, Likes, Country
-
-📜 License
-
-This project is open source under the MIT License – feel free to use and adapt it.
-
-✨ With this project, you can quickly explore how sentiment impacts engagement on different social media platforms, and which hashtags drive conversations.
+What are the most common hashtags across sentiments?timent impacts engagement on different social media platforms, and which hashtags drive conversations.
